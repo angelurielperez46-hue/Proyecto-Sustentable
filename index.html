@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Digital II - Proyecto Web</title>
+    <style>
+        /* Estilos basados en la teoría del color para un diseño limpio y legible */
+        :root {
+            --color-principal: #448d42;    
+            --color-secundario: #2ebb03;  
+            --color-fondo: #f7fafc;       
+            --color-tarjeta: #ffffff;     
+            --color-texto: #2d3748;       
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Encabezado Principal */
+        header {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Barra de Navegación */
+        nav {
+            background-color: var(--color-secundario);
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--color-principal);
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Secciones y Bloques de Contenido (Tarjetas) */
+        section {
+            background-color: var(--color-tarjeta);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: var(--color-principal);
+            border-bottom: 3px solid var(--color-secundario);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .destacado {
+            background-color: #ebf8ff;
+            border-left: 5px solid var(--color-secundario);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Estilos para recursos multimedia (Imágenes) */
+        .imagen-contenedor {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .imagen-contenedor img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            nav { flex-direction: column; text-align: center; }
+            section { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Manos a la Obra por Santiago Tuxtla: Cuidado de Nuestro Entorno Natural</h1>
+        <p>Proyecto Escolar de Cultura Digital II</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#Afectaciones">Afectaciones</a>
+        <a href="#Propuestas">Propuestas</a>
+        <a href="#invitacion">Invitación</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="inicio">
+            <h2>Lo que sucede</h2>
+            <p>"En nuestra comunidad de Santiago Tuxtla, el desecho inadecuado de basura, la contaminación de espacios verdes 
+                y la falta de reciclaje están dañando nuestro entorno natural. Como estudiantes del Grupo 203, vemos con urgencia
+                la necesidad de cambiar nuestros hábitos diarios para proteger la biodiversidad y la salud de nuestras familias."</p>
+        </section>
+
+        <section id="Afectaciones">
+            <h2>Afectaciones Ambientales</h2>
+            <p>"El problema ha avanzado tanto que esta llegando a contaminar cuerpos de agua tales como el arroyo Tajalate el cual inicia desde 
+                la Col. Angel Carvajal y atraviesa distintas zonas del municipio importantes para la 
+                comunidad hasta incorporarse en el arroyo Sapopan y finalmente desembocando en el Río Tepango, afectando no
+                solo a las personas que habitan los espacios cercanos a el si no además a la fauna que al igual que nosostros tambien habitan 
+                y sustentan de estos cuerpos."</p>
+            
+            <div class="destacado">
+                <strong>Evidencias visuales:</strong>
+                <div class="imagen-contenedor">
+                <img src="IMG-20250524-WA0001.jpg" width="350" alt="Imagen del proyecto escolar">
+                <p style="font-size: 0.85rem; color: #718096; italic; margin-top: 0.5rem;"> Evidencia:Arrollo Tajalate, Barrio Xogoyo .</p>
+            </div>
+        
+        </section>
+
+        <section id="Propuestas">
+            <h2>Propuestas de Acción</h2>
+            <p>"Para frenar la contaminación en nuestra comunidad, es necesario pasar de las palabras a la acción mediante la regla de 
+                las 3Rs (Reducir, Reutilizar y Reciclar). Si adoptamos estos pilares como hábitos diarios en nuestras casas y en el
+                 salón de clases, los alumnos del Grupo 203 podremos disminuir los desechos que afectan nuestro entorno.
+                  A continuación, se presentan las acciones clave que podemos iniciar hoy mismo:"</p>      
+    <br>
+           <p>Reducir: Evitemos el uso de plásticos de un solo uso, como bolsas y botellas. Al generar menos basura, aliviamos la carga
+                 de los contenedores locales.</p>
+   <br>
+            <p> Reutilizar: Antes de tirar algo a la basura, piensen si puede tener un segundo uso. Podemos transformar envases viejos
+                     en macetas para plantas o contenedores escolares.</p>
+<br>
+            <p> Reciclar: Separemos el plástico (PET), el cartón y el aluminio. Llevar estos materiales a centros de acopio evita que 
+                        terminen contaminando nuestros ríos y calles.</p>
+                        <br>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=2o3mni8ajbE">Este video explica mejor la 3Rs </a>
+
+        </section>
+
+        <section id="invitacion">
+            <h2>Llamado a la Acción</h2>
+            <p>"¡El cambio empieza con nosotros! Te invitamos a sumarte a las jornadas de limpieza escolar y comunitaria. Comparte esta 
+                página web con tus amigos y vecinos a través de tus redes sociales (WhatsApp, Facebook o Instagram) para que cada vez 
+                seamos más personas cuidando nuestro entorno. "  </p>
+                <br>
+                <p>Las acciones pequeñas como recojer basura de verdad ayudan, CONTRIBUYE AL PLANETA</p>
+                <div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="1ra.jpeg" width="400" height="300" style="object-fit: cover; border-radius: 8px;">
+    <img src="2da.jpeg" width="400" height="300" style="object-fit: cover; border-radius: 8px;">
+</div>
+            <br>
+            <p><strong>Presentado por:</strong> <br>Angel Uriel Pérez Flores<br>Karol Campos Molina</p>
+            <p><strong>Grupo:</strong> 203</p>
+            <p><strong>Asignatura:</strong> Cultura Digital II</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; CBTIS 251  -  Centro de Bachillerato Tecnológico Industrial y de Servicios 
+            No. 251 "Francisco Primo de Verdad y Ramos"</p>
+    </footer>
+
+</body>
+</html>
